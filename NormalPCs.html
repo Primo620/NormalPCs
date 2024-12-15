@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal Computer Setup Specifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #28a745;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th {
+                display: none;
+            }
+            tr {
+                margin-bottom: 10px;
+            }
+            td {
+                text-align: right;
+                position: relative;
+                padding-left: 50%;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: calc(50% - 20px);
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Normal PCs Specifications</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Component</th>
+            <th>Specifications</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Component">Processor (CPU)</td>
+            <td data-label="Specifications">Intel Core i5 12th Gen</td>
+        </tr>
+        <tr>
+            <td data-label="Component">RAM</td>
+            <td data-label="Specifications">8GB DDR4</td>
+        </tr>
+        <tr>
+            <td data-label="Component">Storage</td>
+            <td data-label="Specifications">256GB SSD and 1TB HDD</td>
+        </tr>
+        <tr>
+            <td data-label="Component">Graphics Card</td>
+            <td data-label="Specifications">NVIDIA GTX 1650</td>
+        </tr>
+        <tr>
+            <td data-label="Component">Operating System</td>
+            <td data-label="Specifications">Windows 10</td>
+        </tr>
+        <tr>
+            <td data-label="Component">Power Supply</td>
+            <td data-label="Specifications">450W PSU</td>
+        </tr>
+        <tr>
+            <td data-label="Component">Monitor</td>
+            <td data-label="Specifications">24-inch Full HD (1920x1080)</td>
+        </tr>
+        <tr>
+            <td data-label="Component">Keyboard</td>
+            <td data-label="Specifications">Redragon Mechanical Keyboard</td>
+        </tr>
+        <tr>
+            <td data-label="Component">Mouse</td>
+            <td data-label="Specifications">Fantech Macro Mouse</td>
+        </tr>
+        <tr>
+            <td data-label="Component">HeadSet</td>
+            <td data-label="Specifications">Fantech HeadSet</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
